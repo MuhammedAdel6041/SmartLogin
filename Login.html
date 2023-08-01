@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="imge/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <div class="form-Container-login">
+      <h2>login form</h2>
+      <form>
+        <label for="logInEmail">Email</label>
+        <input
+          type="email"
+          placeholder="User Email"
+          id="logInEmail"
+          class="form-control"
+        />
+        <label for="logInPassword">password</label>
+        <input
+          type="password"
+          placeholder="password"
+          id="logInPassword"
+          class="form-control"
+        />
+        <p id="incorrect"></p>
+        <div class="button-form d-flex justify-content-center my-5">
+          <button id="login" type="button" class="mb-5 text-center">login</button>
+        </div>
+      </form>
+    </div>
+
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="imge/favicon (2).ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Register Form</title>
+  </head>
+  <body >
+
+      
+    <div class="form-Container-Registration ">
+    
+      <h2>Registration form</h2>
+      <form>
+        <label for="userName">User Name</label>
+        <input
+          type="text"
+          placeholder="UserName"
+          id="userName"
+          class="form-control"
+        />
+        <label for="registerEmail">Email</label>
+        <input
+          type="email"
+          placeholder="User Email"
+          id="registerEmail"
+          class="form-control"
+        />
+        <label for="registerPassword">password</label>
+        <input
+          type="password"
+          placeholder="password"
+          id="registerPassword"
+          class="form-control"
+        />
+        <p
+          id="warning"
+          class="text-center text-info pt-5 fa-2x fw-medium d-none"
+        >
+          All input require
+        </p>
+        <p
+          id="success"
+          class="text-center text-success pt-5 fa-2x fw-medium d-none"
+        >
+          successfully registered
+        </p>
+        <p
+        id="danger"
+        class="text-center text-danger pt-5 fa-2x fw-medium d-none"
+      >
+      Email already Exit
+      </p>
+        <div class="button-form d-flex justify-content-center my-5">
+          <button id="register" type="button" class="mb-5 text-center">
+            sign up
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
