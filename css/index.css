@@ -1,7 +1,8 @@
 :root {
-    --mainColor: #A0E7E5;
-    --secondColor: #78C1F3;
-    --borderColor: #2FA4FF;
+    --mainColor: #EF6262;
+    --secondColor: #1D5B79;
+    --borderColor: #D5FFE4;
+    --secondBorder:#116D6E;
     --mainFont: 'Pacifico', cursive;
     --secondFont: 'Righteous', cursive;
 }
@@ -17,27 +18,29 @@ body {
     align-items: center;
 }/*######################################### LOG IN form ################################################ */
 .form-Container-login {
-    background-color: cornflowerblue;
+    background-color: var(--mainColor);
     width: 40%;
     height: 400px;
     padding: 0 10px;
     border-radius: 20px;
-    border: 3px solid var(--mainColor);
+    border-top: 5px solid var(--secondBorder);
+    border-bottom: 5px solid var(--secondBorder);
     /* display: none;    */
     transition: all 0.4s ease-in-out;  
 }
 .form-Container-login:hover{
-    box-shadow: -20px 20px 10px 6px var(--mainColor);
+    box-shadow: -20px 20px 10px 6px var(--secondBorder);
     transform: translate(10px,-10px);
 }
 .form-Container-login h2 {
     text-align: center;
     padding: 16px;
     position: relative;
+    color: white;
 }
 .form-Container-login form label {
     padding: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     display: block;
 }
@@ -46,43 +49,47 @@ body {
     border: 5px solid var(--mainColor);
     font-size: 14px;
     font-weight: 600;
+    border:  2px solid var(--secondBorder);
 }
 .form-Container-login form input:focus{
-    box-shadow: -5px 10px 5px 4px grey;
+    box-shadow: -5px 10px 5px 4px rgba(140, 129, 129, 0.816);
 }
 .form-Container-login form button {
     transition: all 0.4s ease-out;
     border-radius: 15px;
+    border: 2px solid var(--secondBorder);
     padding: 0 15px;
 }
 .form-Container-login form button:hover{
     box-shadow: -5px 5px 10px 6px var(--mainColor);
     transform: translate(1px,-1px);
-    padding:0 50px;
+    padding:3px 50px;
 }
 
 /*######################################### Register form ################################################ */
 .form-Container-Registration {
-    background-color: cornflowerblue;
+    background-color: var(--mainColor);
     width: 40%;
     padding: 0 10px;
     border-radius: 20px;
-    border: 3px solid var(--mainColor);
+    border-top: 5px solid var(--secondBorder);
+    border-bottom: 5px solid var(--secondBorder);
     /* display: none; */
     transition: all 0.4s ease-in-out;  
 }
 .form-Container-Registration:hover{
-    box-shadow: -20px 20px 10px 6px var(--mainColor);
+    box-shadow: -20px 20px 10px 6px var(--secondBorder);
     transform: translate(10px,-10px);
 }
 .form-Container-Registration h2 {
     text-align: center;
     padding: 16px;
     position: relative;
+    color: white;
 }
 .form-Container-Registration form label {
     padding: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     display: block;
 }
@@ -91,18 +98,20 @@ body {
     border: 5px solid var(--mainColor);
     font-size: 14px;
     font-weight: 600;
+    border:  2px solid var(--secondBorder);
 }
 .form-Container-Registration form input:focus{
-    box-shadow: -5px 10px 5px 4px grey;
+    box-shadow: -5px 10px 5px 4px rgba(140, 129, 129, 0.816);
 }
 .form-Container-Registration form button {
     transition: all 0.4s ease-out;
+    border: 2px solid var(--secondBorder);
     border-radius: 15px;
     padding: 0 15px;
 }
 .form-Container-Registration form button:hover{
     box-shadow: -5px 5px 10px 6px var(--mainColor);
     transform: translate(1px,-1px);
-    padding:0 50px;
+    padding:3px 50px;
 }
 
